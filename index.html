@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codechef scraper</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        #title{
+            text-align: center;
+            font-size: 4em;
+            letter-spacing: 4px;
+            word-spacing: 8px;
+            margin-top: 2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            padding: 0.5em 1em;
+            font-size: 1.5em;
+            border-radius: 10px;
+            background-color: blueviolet;
+            border: none;
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(141, 73, 205);
+            transition: all 100ms linear;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">CODECHEF SCRAPER</h1>
+    <!-- <form action="/getpdf">
+        <button type="submit" onclick="handleText()">Scrap</button>
+    </form> -->
+    <script>
+        const btn = document.querySelector('button');
+        function handleText(){
+            btn.innerText = 'Scraping...';
+        }
+    </script>
+</body>
+</html>
